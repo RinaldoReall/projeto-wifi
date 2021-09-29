@@ -13,87 +13,85 @@
 
 UBUNTU=$(lsb_release -rs)
 LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
-#KEYSRVMONGODB="https://www.mongodb.org/static/pgp/server-3.4.asc"
-#KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
+
 export DEBIAN_FRONTEND="noninteractive"
+
 clear
 #
 echo
-echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x\n"
-echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
+echo -e "## --- Instalação do Unifi Controller - Ubuntu Server 18.04 --- ##\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Adicionando o Repositório Universal do Apt..."
+echo -e "[ TECHLABS ] Adicionando o Repositório Universal do Apt"
 	add-apt-repository universe &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Adicionando o Repositório Multiversão do Apt..."
+echo -e "[ TECHLABS ] Adicionando o Repositório Multiversão do Apt"
 	add-apt-repository multiverse &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Atualizando as listas do Apt..."
+echo -e "[ TECHLABS ] Atualizando as listas do Apt"
 	apt update &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Atualizando todo o sistema..."
+echo -e "[ TECHLABS ] Atualizando sistema"
 	apt -y upgrade &>> $LOG
 	#apt -y full-upgrade &>> $LOG
 	#apt -y dist-upgrade &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Removendo os software desnecessários..."
+echo -e "[ TECHLABS ] Removendo os software desnecessários"
 	apt -y autoremove &>> $LOG
 	apt -y autoclean &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "## Instalando o Unifi Controller ##\n"
+echo -e "## --- Instalando o Unifi Controller --- ##\n"
 #
-echo -e "[ TECHLABS ] Adicionando o repositório do MongoDB..."
+echo -e "[ TECHLABS ] Adicionando o repositório do MongoDB"
 	#wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
 	wget -qO - https://www.mongodb.org/static/pgp/server-3.4.asc | apt-key add - &>> $LOG
 	cp -v mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Adicionando o repositório do Unifi Controller..."
-	#wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
+echo -e "[ TECHLABS ] Adicionando o repositório do Unifi Controller"
 	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg &>> $LOG
 	cp -v ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Instalando as dependências do Unifi Controller..."
+echo -e "[ TECHLABS ] Instalando as dependências do Unifi Controller"
 	apt update &>> $LOG
 	apt -y install ca-certificates apt-transport-https &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Instalando o Java OpenJDK e OpenJRE..."
+echo -e "[ TECHLABS ] Instalando o Java OpenJDK e OpenJRE"
 	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
 	java -version &>> $LOG
 	update-java-alternatives -l &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Instalando o Unifi Controller..."
+echo -e "[ TECHLABS ] Instalando o Unifi Controller"
 	apt install -y unifi &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "[ TECHLABS ] Habilitando o Serviço do Unifi Controller..."
+echo -e "[ TECHLABS ] Habilitando o Serviço do Unifi Controller"
 	systemctl enable unifi &>> $LOG
 	systemctl restart unifi &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
-echo -e "Acesso ao Unifi Controller pela URL: https://$(hostname -I | cut -d' ' -f1):8443/\n"
-echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
+echo -e "[ TECHLABS ] Instalação do Unifi Controller feita com Sucesso"
+echo -e "Acesse o Unifi Controller pela URL: https://$(hostname -I | cut -d' ' -f1):8443/\n"
+echo -e "É necessário realizar o cadastro no https://account.ui.com\n"
 echo -e "Pressione <Enter> para concluir o processo."
 read
 exit 1
