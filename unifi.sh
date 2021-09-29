@@ -18,114 +18,76 @@ LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 export DEBIAN_FRONTEND="noninteractive"
 clear
 #
-clear
-if [ "$(nc -vz 127.0.0.1 8080 ; echo $?)" == "0" ]
-	then
-		echo -e "A porta: 8080 já está sendo utilizada nesse servidor.\n"
-		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
-		exit 1
-	else
-		echo -e "A porta: 8080 está disponível..."
-		sleep 5
-fi
-#
-if [ "$(nc -vz 127.0.0.1 8443 ; echo $?)" == "0" ]
-	then
-		echo -e "A porta: 8443 já está sendo utilizada nesse servidor.\n"
-		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
-		exit 1
-	else
-		echo -e "A porta: 8443 está disponível..."
-		sleep 5
-fi
-#
-if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
-	then
-		echo -e "A porta: 27017 já está sendo utilizada nesse servidor.\n"
-		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
-		exit 1
-	else
-		echo -e "A porta: 27017 está disponível..."
-		sleep 5
-fi
-#
-clear
-#
 echo
 echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #
-echo -e "Adicionando o Repositório Universal do Apt, aguarde..."
+echo -e "[ TECHLABS ] Adicionando o Repositório Universal do Apt..."
 	add-apt-repository universe &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Adicionando o Repositório Multiversão do Apt, aguarde..."
+echo -e "[ TECHLABS ] Adicionando o Repositório Multiversão do Apt..."
 	add-apt-repository multiverse &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Atualizando as listas do Apt, aguarde..."
+echo -e "[ TECHLABS ] Atualizando as listas do Apt..."
 	apt update &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Atualizando todo o sistema, aguarde..."
+echo -e "[ TECHLABS ] Atualizando todo o sistema..."
 	apt -y upgrade &>> $LOG
 	#apt -y full-upgrade &>> $LOG
 	#apt -y dist-upgrade &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Removendo os software desnecessários, aguarde..."
+echo -e "[ TECHLABS ] Removendo os software desnecessários..."
 	apt -y autoremove &>> $LOG
 	apt -y autoclean &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Instalando o Unifi Controller, aguarde...\n"
+echo -e "## Instalando o Unifi Controller ##\n"
 #
-echo -e "Adicionando o repositório do MongoDB, aguarde..."
+echo -e "[ TECHLABS ] Adicionando o repositório do MongoDB..."
 	#wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
 	wget -qO - https://www.mongodb.org/static/pgp/server-3.4.asc | apt-key add - &>> $LOG
 	cp -v mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
+echo -e "[ TECHLABS ] Adicionando o repositório do Unifi Controller..."
 	#wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
 	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg &>> $LOG
 	cp -v ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Instalando as dependências do Unifi Controller, aguarde..."
+echo -e "[ TECHLABS ] Instalando as dependências do Unifi Controller..."
 	apt update &>> $LOG
 	apt -y install ca-certificates apt-transport-https &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
+echo -e "[ TECHLABS ] Instalando o Java OpenJDK e OpenJRE..."
 	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
 	java -version &>> $LOG
 	update-java-alternatives -l &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Instalando o Unifi Controller, aguarde..."
+echo -e "[ TECHLABS ] Instalando o Unifi Controller..."
 	apt install -y unifi &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
-echo -e "Habilitando o Serviço do Unifi Controller, aguarde..."
+echo -e "[ TECHLABS ] Habilitando o Serviço do Unifi Controller..."
 	systemctl enable unifi &>> $LOG
 	systemctl restart unifi &>> $LOG
-echo -e "[OK]\n"
-sleep 5
-#
-echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
-	netstat -an | grep '27017\|8080\|8443'
 echo -e "[OK]\n"
 sleep 5
 #
