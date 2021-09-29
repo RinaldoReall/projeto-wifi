@@ -17,9 +17,9 @@ Requisitos mínimos para instalação.
 *   apt -y update && apt -y upgrade
 *   apt -y install git
 
-## Instalação do Script
+## Instalação do Script - Ubuntu 18.04 Server
 *   git clone https://github.com/nilsonpessim/projeto_wifi.git
-*   cd projeto_wifi
+*   cd projeto_wifi 
 *   chmod +x unifi.sh
 *   ./unifi.sh
 
