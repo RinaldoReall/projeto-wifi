@@ -1,8 +1,17 @@
 ![LVNetwork](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
 ## Unifi Controller Install :two_hearts:
-
-## Configurando o Ambiente :axe:
+* :star_struck: Repositório de Instalação e Configuração do Unifi Controller.
+ 
+## :computer: Requisitos do Sistema
+Requisitos mínimos para instalação.
+ 
+* :cd: Sistema Operacional: Ubuntu 18.04 Server
+* :heavy_check_mark: Processador: 2 vCPU
+* :heavy_check_mark: Memória RAM: 4GB
+* :heavy_check_mark: Armazenamento: 50GB
+* :heavy_check_mark: NIC: 1GB
+* :heavy_check_mark: IP da network dos Unifi
 
 ## Instalação do Git. 
 *   apt -y update && apt -y upgrade
