@@ -13,7 +13,7 @@ Requisitos mínimos para instalação.
 * :heavy_check_mark: NIC: 1GB
 * :heavy_check_mark: IP da network do Unifi
 
-## Instalação do Git
+## Instalação dos Pacotes Necessários
 *   apt -y update && apt -y upgrade
 *   apt -y install git
 
