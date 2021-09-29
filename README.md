@@ -20,8 +20,8 @@ Requisitos mínimos para instalação.
 ## Instalação do Script - Ubuntu 18.04 Server
 *   git clone https://github.com/nilsonpessim/projeto_wifi.git
 *   cd projeto_wifi 
-*   chmod +x unifi.sh
-*   ./unifi.sh
+*   chmod +x unifi_1804.sh
+*   ./unifi_1804.sh
 
 ## Referências
 [![Vaanmonde](https://avatars.githubusercontent.com/u/21218780?s=48)](https://github.com/vaamonde/ubiquiti-unifi)
