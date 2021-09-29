@@ -55,13 +55,13 @@ echo -e "## --- Instalando o Unifi Controller --- ##\n"
 echo -e "[ TECHLABS ] Adicionando o repositório do MongoDB"
 	#wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
 	wget -qO - https://www.mongodb.org/static/pgp/server-3.4.asc | apt-key add - &>> $LOG
-	cp -v mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
+	cp -v arquivos/mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
 echo -e "[ TECHLABS ] Adicionando o repositório do Unifi Controller"
 	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg &>> $LOG
-	cp -v ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
+	cp -v arquivos/ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "[OK]\n"
 sleep 5
 #
