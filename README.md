@@ -1,4 +1,4 @@
-![LVNetwork](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
+![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
 ## Unifi Controller Install - Projeto WiFi
 * :star_struck: Repositório de Instalação e Configuração do Unifi Controller.
@@ -22,6 +22,11 @@ Requisitos mínimos para instalação.
 *   cd projeto_wifi
 *   chmod +x unifi.sh
 *   ./unifi.sh
+
+## Referências
+![Vaanmonde](https://avatars.githubusercontent.com/u/21218780?s=48)
+https://github.com/vaamonde/ubiquiti-unifi
+
 
 ## Desenvolvedor :heart_eyes_cat:
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nilsonpessim)](https://github.com/nilsonpessim)
