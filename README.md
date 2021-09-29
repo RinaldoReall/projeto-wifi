@@ -24,9 +24,7 @@ Requisitos mínimos para instalação.
 *   ./unifi.sh
 
 ## Referências
-![Vaanmonde](https://avatars.githubusercontent.com/u/21218780?s=48)
-https://github.com/vaamonde/ubiquiti-unifi
-
+[![Vaanmonde](https://avatars.githubusercontent.com/u/21218780?s=48)](https://github.com/vaamonde/ubiquiti-unifi)
 
 ## Desenvolvedor :heart_eyes_cat:
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nilsonpessim)](https://github.com/nilsonpessim)
