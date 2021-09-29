@@ -1,6 +1,6 @@
 ![LVNetwork](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-## Unifi Controller Install
+## Unifi Controller Install - Projeto WiFi
 * :star_struck: Repositório de Instalação e Configuração do Unifi Controller.
  
 ## :computer: Requisitos do Sistema
