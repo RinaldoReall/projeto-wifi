@@ -11,7 +11,7 @@ Requisitos mínimos para instalação.
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
 * :heavy_check_mark: NIC: 1GB
-* :heavy_check_mark: IP da network do Unifi
+* :heavy_check_mark: Endereço IP que esteja na mesma network dos Radios Unifi
 
 ## Instalação dos Pacotes Necessários
 *   apt -y update && apt -y upgrade && apt -y install git
