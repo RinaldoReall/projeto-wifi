@@ -14,8 +14,7 @@ Requisitos mínimos para instalação.
 * :heavy_check_mark: IP da network do Unifi
 
 ## Instalação dos Pacotes Necessários
-*   apt -y update && apt -y upgrade
-*   apt -y install git
+*   apt -y update && apt -y upgrade && apt -y install git
 
 ## Instalação no Ubuntu 18.04 Server
 *   git clone https://github.com/nilsonpessim/projeto_wifi.git
