@@ -1,29 +1,27 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
 ## Unifi Controller Install - Projeto WiFi
-* :star_struck: Repositório de Instalação e Configuração do Unifi Controller.
+* Repositório de Instalação e Configuração do Unifi Controller.
  
 ## :computer: Requisitos do Sistema
 Requisitos mínimos para instalação.
  
-* :cd: Sistema Operacional: Ubuntu 18.04 Server
+* :cd: Sistema Operacional: Baseado Linux [Ubuntu, Debian]
 * :heavy_check_mark: Processador: 2 vCPU
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
-* :heavy_check_mark: NIC: 1GB
-* :heavy_check_mark: Endereço IP que esteja na mesma network dos Radios Unifi
 
-## Instalação dos Pacotes Necessários
-*   apt -y update && apt -y upgrade && apt -y install git
+## Preparando ambiente:
+*   apt -y update && apt -y upgrade
 
-## Instalação no Ubuntu 18.04 Server
-*   git clone https://github.com/nilsonpessim/projeto_wifi.git
-*   cd projeto_wifi 
-*   chmod +x install_controller_1804.sh
-*   ./install_controller_1804.sh
+## Instalação do UNIFI NETWORK APPLICATION V7.1.68
+*   wget https://get.glennr.nl/unifi/install/unifi-7.1.68.sh
+*   chmod +x unifi-7.1.68.sh
+*   ./unifi-7.1.68.sh
+* SEGUIR OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO
 
 ## Referências
-[![Vaanmonde](https://avatars.githubusercontent.com/u/21218780?s=48)](https://github.com/vaamonde/ubiquiti-unifi)
+[![Glenn R](https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Ubiquiti_Networks_2016.svg/220px-Ubiquiti_Networks_2016.svg.png)](https://glennr.nl/s/unifi-network-controller)
 
 ## Desenvolvedor :heart_eyes_cat:
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nilsonpessim)](https://github.com/nilsonpessim)
