@@ -3,10 +3,10 @@
 ## Unifi Controller Install - Projeto WiFi
 * Repositório de Instalação e Configuração do Unifi Controller.
  
-## :computer: Requisitos do Sistema
+## Requisitos do Sistema
 Requisitos mínimos para instalação.
  
-* :cd: Sistema Operacional: Baseado Linux [Ubuntu, Debian]
+* :cd: Sistema Base Linux [Ubuntu, Debian]
 * :heavy_check_mark: Processador: 2 vCPU
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
