@@ -29,6 +29,7 @@ wget https://get.glennr.nl/unifi/install/unifi-7.2.92.sh
 ```
 chmod +x unifi-7.2.92.sh
 ```
+```
 ./unifi-7.2.92.sh 
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
@@ -46,6 +47,8 @@ set-inform http://X.X.X.X:8080/inform
 *   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB, abra o console do seu Linux e execute o WGET, depois o DPKG:
 ``` 
 wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
+```
+```
 dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ``` 
 
