@@ -61,7 +61,11 @@ set-inform http://X.X.X.X:8080/inform
 
 
 ## Upgrade
-*   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB, abra o console do seu Linux e execute o WGET, depois o DPKG:
+* Atualize os Repositórios e Pacotes do Sistema:
+``` 
+apt -y update && apt -y upgrade
+``` 
+*   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB (Exemplo abaixo para a versão 7.2.92)
 ``` 
 wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ```
