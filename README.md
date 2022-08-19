@@ -32,10 +32,11 @@ chmod +x unifi-7.2.92.sh
 
 
 ## Configurar o UAP para acessar a controladora de forma remota
-*   Acesse seu UAP via SSH, e informe o set-inform, altere o IP para o endereço IP ou Domínio:
+*   Acesse seu UAP via SSH, configure o set-inform
 ``` 
-set-inform http://IP:8080/inform
+set-inform http://X.X.X.X:8080/inform
 ```
+* Alterando X.X.X.X para o endereço IP ou Domínio de sua controladora
 
 
 ## Upgrade
