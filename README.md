@@ -15,12 +15,14 @@ Requisitos do sistema para instalação.
 
 
 ## Preparando o ambiente:
-* Atualize os Repositórios e Pacotes do Sistema
-``` apt -y update && apt -y upgrade ``` 
+* Atualize os Repositórios e Pacotes do Sistema:
+``` 
+apt -y update && apt -y upgrade
+``` 
 
 
 ## Instalação do UniFi Network Application V7.2.x
-* Instalando Versão 7.2.92
+* Instalando a Versão 7.2.92:
 ```
 wget https://get.glennr.nl/unifi/install/unifi-7.2.92.sh
 chmod +x unifi-7.2.92.sh
