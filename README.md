@@ -40,6 +40,20 @@ chmod +x unifi-7.2.92.sh
 ```
 help
 ```
+
+```
+UniFi Command Line Interface - Ubiquiti Networks
+
+   info                      display device information
+   set-default               restore to factory default
+   set-inform <inform_url>   attempt inform URL (e.g. set-inform http://192.168.0.8:8080/inform)
+   upgrade <firmware_url>    upgrade firmware (e.g. upgrade http://192.168.0.8/unifi_fw.bin)
+   fwupdate --url <firmware_url|firmware_name> [--dl-only] [--md5sum <sum_of_fw>]
+            [--keep-firmware] [--keep-running] [--reboot-sys]
+                                   new firmware update command
+   reboot                    reboot the device
+```
+
 * Configure o SET-INFORM (Altere X.X.X.X para o endereço IP ou Domínio de sua controladora)
 ``` 
 set-inform http://X.X.X.X:8080/inform
