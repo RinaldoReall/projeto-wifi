@@ -25,7 +25,10 @@ apt -y update && apt -y upgrade
 * Instalando a Versão 7.2.92:
 ```
 wget https://get.glennr.nl/unifi/install/unifi-7.2.92.sh
+```
+```
 chmod +x unifi-7.2.92.sh
+```
 ./unifi-7.2.92.sh 
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
