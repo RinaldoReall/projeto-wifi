@@ -29,7 +29,7 @@ Requisitos mínimos para instalação.
 
 
 ## Upgrade
-# Acesse a página de Downloads do Unifi Network, https://www.ui.com/download-software, selecione a versão para Linux, copie o link que será apresentado em Direct URL (SEGUE EXEMPLO)
+## Acesse a página de Downloads do Unifi Network, https://www.ui.com/download-software, selecione a versão para Linux, copie o link que será apresentado em Direct URL (SEGUE EXEMPLO)
 *   wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 *   dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 
