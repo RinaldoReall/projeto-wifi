@@ -1,10 +1,10 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-## Unifi Controller Install - Projeto WiFi
-* Repositório de Instalação e Configuração do Unifi Controller.
+## UniFi Network Application - Install
+* Repositório de Instalação e Configuração do UniFi Network Application.
  
 ## Requisitos do Sistema
-Requisitos mínimos para instalação.
+Requisitos do sistema para instalação.
  
 * :cd: Sistema Base Linux [Ubuntu 18.04, Debian 11]
 * :heavy_check_mark: Processador: 2 vCPU
@@ -12,28 +12,21 @@ Requisitos mínimos para instalação.
 * :heavy_check_mark: Armazenamento: 50GB
 * :heavy_check_mark: Conectividade IP: Público ou Privado
 
-## Preparando ambiente:
+## Preparando o ambiente:
 *   apt -y update && apt -y upgrade
 
-## Instalação do UNIFI NETWORK APPLICATION V7.2.x
+## Instalação do UniFi Network Application V7.2.x
 *   wget https://get.glennr.nl/unifi/install/unifi-7.2.92.sh
 *   chmod +x unifi-7.2.92.sh
 *   ./unifi-7.2.92.sh
 * SEGUIR OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO
 
-## Instalação do UNIFI NETWORK APPLICATION V7.1.x
-*   wget https://get.glennr.nl/unifi/install/unifi-7.1.68.sh
-*   chmod +x unifi-7.1.68.sh
-*   ./unifi-7.1.68.sh
-* SEGUIR OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO
-
-
 ## Upgrade
-## Acesse a página de Downloads do Unifi Network, https://www.ui.com/download-software, selecione a versão para Linux, copie o link que será apresentado em Direct URL (SEGUE EXEMPLO)
+*   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB, abra o console do seu Linux e execute o WGET, depois o DPKG:
 *   wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 *   dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 
-## Todas as versões do UNIFI NETWORK APPLICATION
+## Para consultar todas as versões do UniFi Network Application 
 *   https://glennr.nl/s/unifi-network-controller
 
 ## Referências
