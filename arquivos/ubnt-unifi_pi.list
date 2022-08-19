@@ -1,5 +1,0 @@
-#Source List do Ubiquiti Unifi Controller no Ubuntu Server 18.04.x ou 20.04.x ARM 64 Bits
-#
-#Stable Ubiquiti: versão estável do Unifi Controller
-deb [arch=armhf] https://www.ui.com/downloads/unifi/debian stable ubiquiti
-#
