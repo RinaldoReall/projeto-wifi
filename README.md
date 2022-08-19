@@ -66,9 +66,13 @@ set-inform http://X.X.X.X:8080/inform
 apt -y update && apt -y upgrade
 ``` 
 *   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB (Exemplo abaixo para a versão 7.2.92)
+
+*   Baixe o pacote diretamente do terminal do seu Linux com o WGET:
 ``` 
 wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ```
+
+*  Execute o pacote de instalação. OBS: Será solicitado realizar o backup da versão atual, selecione YES:
 ```
 dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ``` 
