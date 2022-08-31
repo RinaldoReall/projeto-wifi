@@ -12,7 +12,7 @@ Requisitos do sistema para instalação.
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
 * :heavy_check_mark: Conectividade IP: Público ou Privado
-* :heavy_check_mark: É possível usar o controlador em núvem, fazendo acesso em camada 03
+* :heavy_check_mark: É possível adotar um UAP em uma controladora remota. (L3)
 
 
 ## Preparando o ambiente:
