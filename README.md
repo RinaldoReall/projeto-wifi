@@ -23,15 +23,15 @@ apt -y update && apt -y upgrade
 
 
 ## Instalação do UniFi Network Application V7.2.x
-* Instalando a Versão 7.2.92:
+* Instalando a Versão 7.2.93:
 ```
-wget https://get.glennr.nl/unifi/install/unifi-7.2.92.sh
-```
-```
-chmod +x unifi-7.2.92.sh
+wget https://get.glennr.nl/unifi/install/unifi-7.2.93.sh
 ```
 ```
-./unifi-7.2.92.sh 
+chmod +x unifi-7.2.93.sh
+```
+```
+./unifi-7.2.93.sh 
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
 
