@@ -3,6 +3,8 @@
 ## UniFi Network Application - Install
 * Repositório de Instalação e Configuração do UniFi Network Application.
  
+## YouTube Tutorial Playlist
+[Acessar Playlist](https://www.youtube.com/watch?v=f9THohalRB0&list=PLxU94wRRr-7xkvOapzNhJTgA-EqZvle3d)
 
 ## Requisitos do Sistema
 Requisitos do sistema para instalação.
