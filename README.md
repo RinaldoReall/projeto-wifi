@@ -68,9 +68,13 @@ set-inform http://X.X.X.X:8080/inform
 ``` 
 apt -y update && apt -y upgrade
 ``` 
-*   Acesse https://www.ui.com/download-software, selecione a última versão para o Sistema Linux, copie o link do arquivo .DEB (Exemplo abaixo para a versão 7.2.92)
+*   Dentro da Network Application, acesse "Setting > System > Check for Updates [Network Application Updates]"
+![image](https://user-images.githubusercontent.com/6774062/194638399-97c5b336-71ec-42b8-9f51-dd5235fdae28.png)
 
-*   Baixe o pacote diretamente do terminal do seu Linux com o WGET:
+* No Popup carregado, copie o link com o botão direto do mouse.
+![image](https://user-images.githubusercontent.com/6774062/194638741-e32eec70-6f97-4954-bbb5-89f8f2a89308.png)
+
+* Baixe o pacote diretamente do terminal do seu Linux com o WGET:
 ``` 
 wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ```
@@ -80,10 +84,8 @@ wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b6812
 dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
 ``` 
 
-
 ## Para consultar todas as versões do UniFi Network Application 
 *   https://glennr.nl/s/unifi-network-controller
-
 
 ## Referências
 [![Glenn R](https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Ubiquiti_Networks_2016.svg/220px-Ubiquiti_Networks_2016.svg.png)](https://glennr.nl/s/unifi-network-controller)
