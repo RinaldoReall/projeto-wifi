@@ -25,15 +25,15 @@ apt -y update && apt -y upgrade
 
 
 ## Instalação do UniFi Network Application V7.2.x
-* Instalando a Versão 7.2.93:
+* Instalando a Versão 7.2.94:
 ```
-wget https://get.glennr.nl/unifi/install/unifi-7.2.93.sh
-```
-```
-chmod +x unifi-7.2.93.sh
+wget https://get.glennr.nl/unifi/install/unifi-7.2.94.sh
 ```
 ```
-./unifi-7.2.93.sh 
+chmod +x unifi-7.2.94.sh
+```
+```
+./unifi-7.2.94.sh 
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
 
@@ -76,12 +76,12 @@ apt -y update && apt -y upgrade
 
 * Baixe o pacote diretamente do terminal do seu Linux com o WGET:
 ``` 
-wget https://fw-download.ubnt.com/data/unifi-controller/7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
+wget https://fw-download.ubnt.com/data/unifi-controller/7fe4-debian-7.2.94-60da5d445e0f47779a6d635724185886.deb
 ```
 
 *  Execute o pacote de instalação. OBS: Será solicitado realizar o backup da versão atual, selecione YES:
 ```
-dpkg -i 7684-debian-7.2.92-b681295cf6634133824ff9c60cd19fe8.deb
+dpkg -i 7fe4-debian-7.2.94-60da5d445e0f47779a6d635724185886.deb
 ``` 
 
 ## Para consultar todas as versões do UniFi Network Application 
