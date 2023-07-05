@@ -62,6 +62,11 @@ UniFi Command Line Interface - Ubiquiti Networks
 set-inform http://X.X.X.X:8080/inform
 ```
 
+* EXTRA - Resetar o UAP via SSH
+``` 
+syswrapper.sh restore-default
+```
+
 
 ## Upgrade
 * Atualize os Repositórios e Pacotes do Sistema:
