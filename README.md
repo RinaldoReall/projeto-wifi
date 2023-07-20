@@ -9,7 +9,7 @@
 ## Requisitos do Sistema
 Requisitos do sistema para instalação.
  
-* :cd: Sistema Base Linux [Ubuntu 18.04, Debian 11]
+* :cd: Sistema Base Linux [Ubuntu 20.04, Debian 11]
 * :heavy_check_mark: Processador: 2 vCPU
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
@@ -24,16 +24,16 @@ apt -y update && apt -y upgrade
 ``` 
 
 
-## Instalação do UniFi Network Application V7.2.x
-* Instalando a Versão 7.2.94:
+## Instalação do UniFi Network Application V7.4.x
+* Instalando a Versão 7.4.162:
 ```
-wget https://get.glennr.nl/unifi/install/unifi-7.2.94.sh
-```
-```
-chmod +x unifi-7.2.94.sh
+wget https://get.glennr.nl/unifi/install/unifi-7.4.162.sh
 ```
 ```
-./unifi-7.2.94.sh 
+chmod +x unifi-7.4.162.sh
+```
+```
+./unifi-7.4.162.sh
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
 
