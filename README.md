@@ -93,7 +93,7 @@ dpkg -i 7fe4-debian-7.2.94-60da5d445e0f47779a6d635724185886.deb
 *   https://glennr.nl/s/unifi-network-controller
 
 ## Referências
-[![Glenn R](https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Ubiquiti_Networks_2016.svg/220px-Ubiquiti_Networks_2016.svg.png)](https://glennr.nl/s/unifi-network-controller)
+[![Glenn R](https://upload.wikimedia.org/wikipedia/commons/b/ba/Ubiquiti_Networks.svg)](https://glennr.nl/s/unifi-network-controller)
 
 
 ## Desenvolvedor :heart_eyes_cat:
