@@ -24,16 +24,16 @@ apt -y update && apt -y upgrade
 ``` 
 
 
-## Instalação do UniFi Network Application V7.4.x
+## Instalação do UniFi Network Application V8.0.x
 * Instalando a Versão 7.4.162:
 ```
-wget https://get.glennr.nl/unifi/install/unifi-7.4.162.sh
+wget https://get.glennr.nl/unifi/install/unifi-8.0.28.sh
 ```
 ```
-chmod +x unifi-7.4.162.sh
+chmod +x unifi-8.0.28.sh
 ```
 ```
-./unifi-7.4.162.sh
+./unifi-8.0.28.sh
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
 
