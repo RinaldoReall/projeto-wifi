@@ -1,4 +1,4 @@
-![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
+![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
 ## UniFi Network Application - Install
 * Repositório de Instalação e Configuração do UniFi Network Application.
@@ -9,7 +9,7 @@
 ## Requisitos do Sistema
 Requisitos do sistema para instalação.
  
-* :cd: Sistema Base Linux [Ubuntu 20.04, Debian 11]
+* :cd: Sistema Base Linux [Ubuntu 22.04, Debian 11]
 * :heavy_check_mark: Processador: 2 vCPU
 * :heavy_check_mark: Memória RAM: 4GB
 * :heavy_check_mark: Armazenamento: 50GB
@@ -24,16 +24,16 @@ apt -y update && apt -y upgrade
 ``` 
 
 
-## Instalação do UniFi Network Application V8.1.x
+## Instalação do UniFi Network Application V8.2.x
 * Instalando a Versão 8.1.127:
 ```
-wget https://get.glennr.nl/unifi/install/unifi-8.1.127.sh
+wget https://get.glennr.nl/unifi/install/unifi-8.2.93.sh
 ```
 ```
-chmod +x unifi-8.1.127.sh
+chmod +x unifi-8.2.93.sh
 ```
 ```
-./unifi-8.1.127.sh
+./unifi-8.2.93.sh
 ``` 
 * SIGA OS PASSOS SOLICITADOS NA TELA DE INSTALAÇÃO.
 
@@ -62,7 +62,7 @@ UniFi Command Line Interface - Ubiquiti Networks
 set-inform http://X.X.X.X:8080/inform
 ```
 
-* EXTRA - Resetar o UAP via SSH
+* Resetar o UAP via SSH
 ``` 
 syswrapper.sh restore-default
 ```
@@ -100,3 +100,12 @@ dpkg -i 7fe4-debian-7.2.94-60da5d445e0f47779a6d635724185886.deb
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/nilsonpessim)](https://github.com/nilsonpessim)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://br.linkedin.com/in/nilsonpessim)](https://br.linkedin.com/in/nilsonpessim)
 [![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5537999351046)](https://api.whatsapp.com/send?phone=5537999351046)
+
+## :sparkling_heart: Nos Ajude a Crescer
+>Se este Material foi útil para você, ajude se inscrevendo no meu canal do YouTube.
+>
+>(https://youtube.com/techlabs94?sub_confirmation=1)
+> 
+>Isso me incentiva a trazer mais materiais como este e muitos outros de redes e tecnologia.
+> 
+>## ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCWN6suTq5sZGqnSLos992Yw?style=social)
